@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 3</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        
+        #desktop{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: none;
+        }
+        #listraVerde{
+            background-color: #93C47D;
+            height: 50vh;
+        }
+        #listraAzul{
+            background-color: #4A86E8;
+            height: 50vh;
+        }
+
+
+        
+
+        #tv{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: none;
+        }
+
+        #listratvVerde{
+            background-color: #4A86E8;
+            height: 20vh;
+        }
+        #listratvAzul{
+            background-color: #93C47D;
+            height: 20vh;
+        }
+
+        #listratvRoxo{
+            background-color: #B4A7D6;
+            height: 20vh;
+        }
+
+
+
+        @media only screen and (min-width: 480px) {
+            body {
+                background-color: #93C47D;
+            }
+        }
+
+        @media only screen and (min-width: 1280px) {
+            #desktop{
+                display: block;
+            }
+            #tv{
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 1920px) {
+            #tv{
+                display: block;
+            }
+            #desktop{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="desktop">
+        <div id="listraVerde"></div>
+        <div id="listraAzul"></div>
+    </div>
+
+    <div id="tv">
+        <div id="listratvVerde"></div>
+        <div id="listratvAzul"></div>
+        <div id="listratvRoxo"></div>
+        <div id="listratvVerde"></div>
+        <div id="listratvAzul"></div>
+    </div>
+</body>
+
+</html>
